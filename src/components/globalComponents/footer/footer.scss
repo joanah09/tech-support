@@ -1,0 +1,44 @@
+footer {
+    background: $black;
+    font-family: $open-sans;
+    h4 {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: $black;
+        background: $white;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 1px 3px;
+        margin: 0 auto;
+    }
+    .social {
+        text-align: center;
+        svg {
+            background: $white;
+            padding: 10px 10px;
+            width: 20px;
+            height: 20px;
+            margin: 25px 0px 0 10px;
+            text-align: center;
+            color: $black;
+            border-radius: 40px;
+            font-size: 21px;
+            text-align: center;
+            @extend .effects;
+            &:hover {
+                background: $light-blue;
+                color: $white;
+            }
+        }
+    }
+    .copyright {
+        p {
+            color: $light-gray2;
+            font-size: 12px;
+            text-align: center;
+            line-height: 18px;
+        }
+    } 
+}
+
+
+    

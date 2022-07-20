@@ -1,0 +1,40 @@
+.contact {
+    background: $light-gray1;
+    h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+    label {
+        font-size: 18px;
+    }
+    .form-control {	 
+        border-radius: 0;
+    }
+    .btn-primary {
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 10px 35px;
+        text-align: center;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        border: 2px solid $white;
+        border-radius: 0;
+        background: $light-blue;
+        border: 2px solid $light-blue;
+        @extend .effects;
+        &:hover {
+            color: $light-blue;
+            background: $white;
+            border: 2px solid $light-blue;
+        }
+    }
+    textarea {
+        height: 208px;
+    }
+    
+}

@@ -1,0 +1,33 @@
+nav {
+  max-height: none;
+  background: $light-gray1;
+  border-bottom: 5px solid $light-blue;
+  @include bp(desk) {
+    max-height: 75px;
+  }
+  .logo {
+    position: relative;
+    max-width: 300px;
+    max-height: 85px;
+      @extend .effects;
+      @include bp(desk) {
+        top: 10px;
+        max-height: none;
+      }
+  }
+  .navbar-nav {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    a {
+      margin-left: 20px;
+      font-weight: 400;
+      color: $black !important;
+      @extend .effects;
+      &:hover {
+      color: $light-blue !important;
+      }
+    }
+  }
+}
+

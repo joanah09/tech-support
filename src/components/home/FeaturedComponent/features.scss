@@ -1,0 +1,23 @@
+.features {
+	background: $light-blue;
+	font-family: $roboto;
+	color: $white;
+		h2 {
+			font-size: 32px;
+			padding-bottom: 12px;
+			text-align: center;
+		}
+		h3 {
+			font-size: 22px;
+		}
+
+		p {
+			margin-bottom: 30px;
+			font-size: 16px;
+		}
+
+		img {
+			margin: 0 auto;
+			max-width: 84px;
+		}
+}

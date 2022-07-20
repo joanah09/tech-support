@@ -1,0 +1,30 @@
+.banner {
+    height: 640px;
+    max-height: 640px;
+    padding: 0;
+    .title {
+        color: $white;
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 45px;
+            text-transform: uppercase;
+    
+        }
+
+        h2 {
+            padding: 25px 0 35px 0;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 37px;
+        }
+    }
+    .arrow {
+        position: relative;
+        bottom: 55px;
+        text-align: center;
+        font-size: 30px;
+        color: $white;
+
+    }  
+}

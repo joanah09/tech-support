@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Header from '../components/globalComponents/header/headerComponent';
+import Footer from '../components/globalComponents/footer/footerComponent';
+import Banner from '../components/globalComponents/banner/bannerComponent';
 import Contact from '../components/globalComponents/contact/contact';
-import Banner from '../components/globalComponents/header/bannerComponent';
 import Desktop from '../components/home/desktopInfo/desktopInfo';
 import Features from '../components/home/FeaturedComponent/featuresComponent';
 import MobileInfo from '../components/home/mobileInfo/mobileInfo';
@@ -8,14 +10,18 @@ import MoreInfo from '../components/home/moreInfo/moreInfo';
 
 function Home() {
 return (
-<main className="homepage position-relative">
-  <Banner />
-  <Features />
-  <MobileInfo />
-  <Desktop />
-  <MoreInfo />
-  <Contact />
-</main>
+  <Fragment>
+    <Header />
+    <main className="homepage position-relative">
+        <Banner />
+        <Features />
+        <MobileInfo />
+        <Desktop />
+        <MoreInfo />
+        <Contact />
+      </main>
+    <Footer />
+  </Fragment>
     )
 }
 

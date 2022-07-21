@@ -14,7 +14,7 @@ function Header() {
     <Navbar collapseOnSelect expand="lg" className="fixed-top position-relative" bg="light" variant="light">
       <Container>
         <Navbar.Brand href="#" className="">
-            <img className="logo" src="../../assets/images/logo.jpg" />
+            <img className="logo" src="../../assets/images/logo.jpg" alt="logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">

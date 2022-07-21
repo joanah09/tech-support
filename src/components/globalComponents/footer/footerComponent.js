@@ -10,7 +10,6 @@ function Footer() {
         <div className="w-auto mx-auto text-center">
             <h4>TECHSUPPORT</h4>
         </div>
-      
         <div className="social pr-0 w-100">
             <a href="#"><FontAwesomeIcon icon="fa-brands fa-facebook-f" /></a>
             <a href="#"><FontAwesomeIcon icon="fa-brands fa-twitter" /></a>

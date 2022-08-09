@@ -1,28 +1,9 @@
-import { useState } from "react"
+import { useOnChange, useHandleSubmit, useFormData} from '../../../context/ContactFormInfo'
 
 function ContactForm() {
-    const initialState = {
-        name:"", 
-        email: "",
-        number: "",
-        message: "",
-    }
-    const [formData, setFormData] = useState(initialState)
-    function handleChange(event) {
-        const {name, value} = event.target
-
-        setFormData(prevState => {
-            return {
-                ...prevState,
-                [name]: value
-            }
-        })
-    }
-    function handleSubmit(event) {
-        event.preventDefault()
-        console.log(formData)
-        setFormData({...initialState})
-    }
+    const handleSubmit = useHandleSubmit()
+    const handleChange = useOnChange()
+    const formData = useFormData()
     
     return (
         <form className="row position-relative" onSubmit={handleSubmit}>
@@ -46,6 +27,7 @@ function ContactForm() {
             </section>
           <button className="btn btn-primary mb-5">SEND</button>
       </form>
+
     )
 }
 
